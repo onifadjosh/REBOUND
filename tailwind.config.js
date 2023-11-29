@@ -3,8 +3,8 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     backgroundImage: {
-      'bg1': "url('./images/bg1.png')",
-      'bg2': "url('./images/img05.png')",
+      'bg1': "url('./images/header.png')",
+      'bg2': "url('./images/secbb.png')",
       'bg3': "url('.",
       
     },

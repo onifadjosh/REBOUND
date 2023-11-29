@@ -794,10 +794,6 @@ video {
   background-color: transparent;
 }
 
-.bg-\[url\(\'\.\/dist\/images\/header\.png\'\)\] {
-  background-image: url('./dist/images/header.png');
-}
-
 .bg-\[url\(\'dist\/images\/secback\.png\'\)\] {
   background-image: url('dist/images/secback.png');
 }
@@ -806,8 +802,24 @@ video {
   background-image: url('dist/images/secbb.png');
 }
 
-.bg-\[url\(\'\.\/images\/header\.png\'\)\] {
+.bg-bg1 {
   background-image: url('./images/header.png');
+}
+
+.bg-bg2 {
+  background-image: url('./images/secbb.png');
+}
+
+.bg-\[url\(\'\.\/images\/secbb\.png\'\)\] {
+  background-image: url('./images/secbb.png');
+}
+
+.bg-\[url\(\'\/dist\/images\/secbb\.png\'\)\] {
+  background-image: url('/dist/images/secbb.png');
+}
+
+.bg-\[url\(\'\.\/images\/secback\.png\'\)\] {
+  background-image: url('./images/secback.png');
 }
 
 .bg-cover {
