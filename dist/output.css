@@ -806,6 +806,14 @@ video {
   background-image: url('dist/images/secbb.png');
 }
 
+.bg-\[url\(\'\/dist\/images\/secbb\.png\'\)\] {
+  background-image: url('/dist/images/secbb.png');
+}
+
+.bg-\[url\(\'\/dist\/images\/header\.png\'\)\] {
+  background-image: url('/dist/images/header.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
