@@ -738,6 +738,10 @@ video {
   border-width: 1px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-x-\[1px\] {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -758,6 +762,10 @@ video {
 
 .border-t-\[1px\] {
   border-top-width: 1px;
+}
+
+.border-l-\[1px\] {
+  border-left-width: 1px;
 }
 
 .border-\[\#EBA900\] {
