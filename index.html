@@ -63,15 +63,15 @@
 
             <div class="menu hidden xl:flex items-center justify-between basis-[75%] text-[20px] font-bold px-5">
                 <a href="http://" id="trigger-element">New</a>
-                <a href="http://">Red</a>
-                <a href="http://">White</a>
+                <a href="http://" id="trigger-element1">Red</a>
+                <a href="http://" id="trigger-element2">White</a>
                 <a href="http://">Orange & Skinsy</a>
                 <a href="http://">Rose</a>
-                <a href="http://">sparkling</a>
+                <a href="http://" id="trigger-element3">sparkling</a>
                 <a href="#">Not Wine</a>
                 <a href="http://">Packs</a>
                 <a href="http://">Wine Club</a>
-                <a href="http://">Info</a>
+                <a href="http://" id="info-trig">Info</a>
                 <a href="http://">Account</a>
             </div>
 
@@ -110,58 +110,366 @@
             </div>
         </nav>
 
-        <div class="absolute  z-10" id="hidden-element">
-            <div class="flex text-[#ffecbd] bg-[#59611d]">
-                <div>
+        <div class="absolute hidden" id="hidden-element">
+            <div class="flex text-[#ffecbd] bg-[#59611d] text-[17px] font-medium">
+                <div class="flex flex-col basis-[25%] px-5 py-10 gap-8 border-r-[1px] border-[#ffecbd40] ">
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">NEW ARRIVALS<a></a>
+                        </div>
+                        <div class="flex flex-col">
+                            <a href="http://">New Red Wine</a>
+                            <a href="http://">New White Wine</a>
+                            <a href="http://">New Rose</a>
+                            <a href="http://">New Orange & Skinsy Wine </a>
+                            <a href="http://">New Sparkling Wine</a>
+                            <a href="http://">New Lo-Fi & Natural Wine</a>
+                            <a href="http://">New Progressive Wine</a>
+                            <a href="http://">New Traditional Wine</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">SHOP BY PRICE</a>
+                        </div>
+                        <div class="flex flex-col">
+                            <a href="http://">$</a>
+                            <a href="http://">$$</a>
+                            <a href="http://">$$$</a>
+                            <a href="http://">$$$</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10 gap-8 border-r-[1px] border-[#ffecbd40]">
                     <div class="">
-                        <h3>NEW ARRIVALS</h3>
-                        <a href="http://">New Red Wine</a>
-                        <a href="http://">New White Wine</a>
-                        <a href="http://">New Rose</a>
-                        <a href="http://">New Orange & Skinsy Wine </a>
-                        <a href="http://">New Sparkling Wine</a>
-                        <a href="http://">New Lo-Fi & Natural Wine</a>
-                        <a href="http://">New Progressive Wine</a>
-                        <a href="http://">New Traditional Wine</a>
+                        <a href="" class="text-[20px] font-semibold">TRENDING</a>
                     </div>
-
-                    <div>
-                        <h3>SHOP BY PRICE</h3>
-                        <a href="http://">$</a>
-                        <a href="http://">$$</a>
-                        <a href="http://">$$$</a>
-                        <a href="http://">$$$</a>
+                    <div class="flex flex-col">
+                        <a href="http://">Gentle Guide ➺ Terroir</a>
+                        <a href="http://">Guest Chefs ➺ Recipe Series</a>
+                        <a href="http://">Feature Variety ➺ Nebbiolo</a>
+                        <a href="http://">Feature Region ➺ Wines of Etna</a>
+                        <a href="http://">Feature Producer ➺ Vietti</a>
+                        <a href="http://">2 Minute Guide ➺ Orange Wine</a>
+                        <a href="http://">Fun Fizz ➺ Pét Nat</a>
+                        <a href="http://">Cult Producers ➺ Cult Wines</a>
+                        <a href="http://">Biodynamic Wine</a>
                     </div>
-
-                </div>
-                <div>
-                    <h3>TRENDING</h3>
-                    <a href="http://">Gentle Guide ➺ Terroir</a>
-                    <a href="http://">Guest Chefs ➺ Recipe Series</a>
-                    <a href="http://">Feature Variety ➺ Nebbiolo</a>
-                    <a href="http://">Feature Region ➺ Wines of Etna</a>
-                    <a href="http://">Feature Producer ➺ Vietti</a>
-                    <a href="http://">2 Minute Guide ➺ Orange Wine</a>
-                    <a href="http://">Fun Fizz ➺ Pét Nat</a>
-                    <a href="http://">Cult Producers ➺ Cult Wines</a>
-                    <a href="http://">Biodynamic Wine</a>
                 </div>
 
-                <div>
-                    <h3>BIODYNAMIC WINE</h3>
-                    <img src="dist/images/meuimg1.png" alt="" srcset="">
-                    <a href="http://">LEARN MORE</a>
+                <div class="flex flex-col basis-[25%] px-5 py-10 border-r-[1px] border-[#ffecbd40]">
+                    <a href="" class="text-[20px] font-semibold">BIODYNAMIC WINE</a>
+                    <div class="my-5 overflow-hidden rounded-[20px] ">
+                        <a href="">
+                            <img src="dist/images/meuimg1.png" alt="menu image" srcset="" class="rounded-[20px] hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">LEARN MORE</a>
                 </div>
 
-                <div>
-                    <h3>CULT PRODUCERS</h3>
-                    <img src="dist/images/menuimg2.jpg" alt="" srcset="">
-                    <a href="http://">CULT WINES</a>
+                <div class="flex flex-col basis-[25%] px-5 py-10">
+                    <a href="" class="text-[20px] font-semibold">CULT PRODUCERS</a>
+                    <div class="my-5  overflow-hidden rounded-[20px]">
+                        <a href="">
+                            <img src="dist/images/menuimg2.jpg" alt="menu image" srcset="" class="rounded-[20px]  hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">CULT WINES</a>
                 </div>
             </div>
 
-            <div class="text-center bg-[#ee7623]">
-                <h3>
+            <div class="text-center bg-[#ee7623] ">
+                <h3 class="py-6 text-[20px] font-semibold">
+                    ➺ Carbon Neutral Shipping On All Orders ➺ Complimentary Order Insurance ➺ Same Day Dispatch
+                </h3>
+            </div>
+        </div>
+
+        <div class="absolute hidden" id="hidden-element1">
+            <div class="flex text-[#ffecbd] bg-[#59611d] text-[17px] font-medium">
+                <div class="flex flex-col basis-[25%] px-5 py-10 gap-8 border-r-[1px] border-[#ffecbd40] ">
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">RED WINE<a></a>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <a href="http://">Lo-Fi & Natural Red Wine</a>
+                            <a href="http://">Progressive Red Wine</a>
+                            <a href="http://">Traditional Red Wine</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">SHOP BY PRICE</a>
+                        </div>
+                        <div class="flex flex-col">
+                            <a href="http://">$</a>
+                            <a href="http://">$$</a>
+                            <a href="http://">$$$</a>
+                            <a href="http://">$$$</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10 gap-8 border-r-[1px] border-[#ffecbd40]">
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">VARIETY<a></a>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <a href="http://">Pinot Noir</a>
+                            <a href="http://">Gamay</a>
+                            <a href="http://">Sangiovese</a>
+                            <a href="http://">Grenache</a>
+                            <a href="http://">Nabbiolo</a>
+                            <a href="http://">Shiraz</a>
+                            <a href="http://">Cabernet</a>
+                            <a href="http://">Syrah</a>
+                            <a href="http://">Nero d'Avola</a>
+                            <a href="http://">Read Blends</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">COUNTRY</a>
+                        </div>
+                        <div class="flex flex-col">
+                            <a href="http://">Australia</a>
+                            <a href="http://">France</a>
+                            <a href="http://">Italy</a>
+                            <a href="http://">Germany</a>
+                            <a href="http://">Spain & Portugal</a>
+                            <a href="http://">Austria</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10 border-r-[1px] border-[#ffecbd40]">
+                    <a href="" class="text-[20px] font-semibold">FEATURE PRODUCERS</a>
+                    <div class="my-5 overflow-hidden rounded-[20px] ">
+                        <a href="">
+                            <img src="dist/images/menuimg10.jpg" alt="menu image" srcset="" class="rounded-[20px] hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">VIETTI</a>
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10">
+                    <a href="" class="text-[20px] font-semibold">FEATURE VARIETY</a>
+                    <div class="my-5  overflow-hidden rounded-[20px]">
+                        <a href="">
+                            <img src="dist/images/menuimg11.jpg" alt="menu image" srcset="" class="rounded-[20px]  hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">GRENACHE</a>
+                </div>
+            </div>
+
+            <div class="text-center bg-[#ee7623] ">
+                <h3 class="py-6 text-[20px] font-semibold">
+                    ➺ Carbon Neutral Shipping On All Orders ➺ Complimentary Order Insurance ➺ Same Day Dispatch
+                </h3>
+            </div>
+        </div>
+
+        <div class="absolute hidden" id="hidden-element2">
+            <div class="flex text-[#ffecbd] bg-[#59611d] text-[17px] font-medium">
+                <div class="flex flex-col basis-[25%] px-5 py-10 gap-8 border-r-[1px] border-[#ffecbd40] ">
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">RED WINE<a></a>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <a href="http://">Lo-Fi & Natural White Wine</a>
+                            <a href="http://">Progressive White Wine</a>
+                            <a href="http://">Traditional White Wine</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">SHOP BY PRICE</a>
+                        </div>
+                        <div class="flex flex-col">
+                            <a href="http://">$</a>
+                            <a href="http://">$$</a>
+                            <a href="http://">$$$</a>
+                            <a href="http://">$$$</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10 gap-8 border-r-[1px] border-[#ffecbd40]">
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">VARIETY<a></a>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <a href="http://">Chardonnay</a>
+                            <a href="http://">Pinot Grigio / Gris</a>
+                            <a href="http://">Riesling</a>
+                            <a href="http://">Chenin Blanc</a>
+                            <a href="http://">Sauvignon Blanc</a>
+                            <a href="http://">Semillon</a>
+                            <a href="http://">Fiano</a>
+                            <a href="http://">Aligoté</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">COUNTRY</a>
+                        </div>
+                        <div class="flex flex-col">
+                            <a href="http://">Australia</a>
+                            <a href="http://">France</a>
+                            <a href="http://">Italy</a>
+                            <a href="http://">Germany</a>
+                            <a href="http://">Spain & Portugal</a>
+                            <a href="http://">Austria</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10 border-r-[1px] border-[#ffecbd40]">
+                    <a href="" class="text-[20px] font-semibold">FEATURE PRODUCERS</a>
+                    <div class="my-5 overflow-hidden rounded-[20px] ">
+                        <a href="">
+                            <img src="dist/images/menuimg3.jpg" alt="menu image" srcset="" class="rounded-[20px] hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">VIETTI</a>
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10">
+                    <a href="" class="text-[20px] font-semibold">FEATURE VARIETY</a>
+                    <div class="my-5  overflow-hidden rounded-[20px]">
+                        <a href="">
+                            <img src="dist/images/menuimg4.jpg" alt="menu image" srcset="" class="rounded-[20px]  hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">GRENACHE</a>
+                </div>
+            </div>
+
+            <div class="text-center bg-[#ee7623] ">
+                <h3 class="py-6 text-[20px] font-semibold">
+                    ➺ Carbon Neutral Shipping On All Orders ➺ Complimentary Order Insurance ➺ Same Day Dispatch
+                </h3>
+            </div>
+        </div>
+
+        <div class="absolute hidden" id="hidden-element3">
+            <div class="flex text-[#ffecbd] bg-[#59611d] text-[17px] font-medium">
+                <div class="flex flex-col basis-[50%] px-5 py-10 gap-8 border-r-[1px] border-[#ffecbd40] ">
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">SPARKLING WINE<a></a>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <a href="http://">Shop All Sparkling Wine</a>
+                            <a href="http://">Champagne</a>
+                            <a href="http://">Pét Nat</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="flex flex-col basis-[25%] px-5 py-10 border-r-[1px] border-[#ffecbd40]">
+                    <a href="" class="text-[20px] font-semibold">CHAMPAGNE</a>
+                    <div class="my-5 overflow-hidden rounded-[20px] ">
+                        <a href="">
+                            <img src="dist/images/menuimg5.jpg" alt="menu image" srcset="" class="rounded-[20px] hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">SHOP NOW</a>
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10">
+                    <a href="" class="text-[20px] font-semibold">PÉT NAT</a>
+                    <div class="my-5  overflow-hidden rounded-[20px]">
+                        <a href="">
+                            <img src="dist/images/menuimg6.jpg" alt="menu image" srcset="" class="rounded-[20px]  hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">GRENACHE</a>
+                </div>
+            </div>
+
+            <div class="text-center bg-[#ee7623] ">
+                <h3 class="py-6 text-[20px] font-semibold">
+                    ➺ Carbon Neutral Shipping On All Orders ➺ Complimentary Order Insurance ➺ Same Day Dispatch
+                </h3>
+            </div>
+        </div>
+
+        <div class="absolute hidden" id="info-hidden">
+            <div class="flex text-[#ffecbd] bg-[#59611d] text-[17px] font-medium">
+                <div class="flex flex-col basis-[25%] px-5 py-10 gap-8 border-r-[1px] border-[#ffecbd40] ">
+                    <div class="flex flex-col gap-8">
+                        <div class="">
+                            <a href="#" class="text-[20px] font-semibold">INFORMATION</a>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <a href="http://">Shipping & Delivery</a>
+                            <a href="http://">Always Loyal Rewards</a>
+                            <a href="http://">About Us</a>
+                            <a href="http://">Contact Us</a>
+                            <a href="http://">Gift Cards</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10 border-r-[1px] border-[#ffecbd40]">
+                    <a href="" class="text-[20px] font-semibold">ABOUT US</a>
+                    <a href="#" class="my-5 overflow-hidden rounded-[20px] h-full ">
+                        <div  class=" h-full bg-[url('./images/menuimg7.jpg')] bg-cover bg-center hover:scale-[1.1] duration-200 transition-all">
+                            
+                        </div>
+                    </a>
+                    <a href="http://" class="text-[20px] font-semibold">MEET THE TEAM</a>
+                </div>
+                
+
+                <div class="flex flex-col basis-[25%] px-5 py-10 border-r-[1px] border-[#ffecbd40]">
+                    <a href="" class="text-[20px] font-semibold">ALWAYS LOYAL REWARDS</a>
+                    <div class="my-5 overflow-hidden rounded-[20px] ">
+                        <a href="">
+                            <img src="dist/images/menuimg8.png" alt="menu image" srcset="" class="rounded-[20px] hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">GET LOYAL, STAY LOYAL</a>
+                </div>
+
+                <div class="flex flex-col basis-[25%] px-5 py-10">
+                    <a href="" class="text-[20px] font-semibold">THE CLUB</a>
+                    <div class="my-5  overflow-hidden rounded-[20px]">
+                        <a href="">
+                            <img src="dist/images/menuimg9.png" alt="menu image" srcset="" class="rounded-[20px]  hover:scale-[1.1] duration-200 transition-all">
+                        </a>
+                    </div>
+                    <a href="http://" class="text-[20px] font-semibold">MORE THAN JUST A WINE CLUB</a>
+                </div>
+            </div>
+
+            <div class="text-center bg-[#ee7623] ">
+                <h3 class="py-6 text-[20px] font-semibold">
                     ➺ Carbon Neutral Shipping On All Orders ➺ Complimentary Order Insurance ➺ Same Day Dispatch
                 </h3>
             </div>
