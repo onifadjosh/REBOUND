@@ -550,10 +550,6 @@ video {
   top: 15%;
 }
 
-.-z-10 {
-  z-index: -10;
-}
-
 .m-\[15px\] {
   margin: 15px;
 }
@@ -603,6 +599,10 @@ video {
   height: 65vh;
 }
 
+.h-\[72\%\] {
+  height: 72%;
+}
+
 .h-\[90\%\] {
   height: 90%;
 }
@@ -613,10 +613,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[72\%\] {
-  height: 72%;
 }
 
 .w-\[60\%\] {
@@ -659,6 +655,10 @@ video {
   max-width: 60%;
 }
 
+.max-w-\[75\%\] {
+  max-width: 75%;
+}
+
 .basis-1\/2 {
   flex-basis: 50%;
 }
@@ -673,10 +673,6 @@ video {
 
 .basis-\[75\%\] {
   flex-basis: 75%;
-}
-
-.basis-\[25\] {
-  flex-basis: 25;
 }
 
 .transform {
@@ -719,10 +715,6 @@ video {
   gap: 2rem;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -751,23 +743,7 @@ video {
   border-radius: 50px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-\[100px\] {
-  border-radius: 100px;
-}
-
-.rounded-\[\] {
-  border-radius: ;
-}
-
 .border-\[1px\] {
-  border-width: 1px;
-}
-
-.border {
   border-width: 1px;
 }
 
@@ -798,18 +774,13 @@ video {
   border-color: rgb(235 169 0 / var(--tw-border-opacity));
 }
 
+.border-\[\#ffecbd40\] {
+  border-color: #ffecbd40;
+}
+
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-\[\#ffecbd\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 236 189 / var(--tw-border-opacity));
-}
-
-.border-\[\#ffecbd40\] {
-  border-color: #ffecbd40;
 }
 
 .bg-\[\#59611d\] {
@@ -836,6 +807,10 @@ video {
   background-color: transparent;
 }
 
+.bg-\[url\(\'\.\/images\/menuimg7\.jpg\'\)\] {
+  background-image: url('./images/menuimg7.jpg');
+}
+
 .bg-\[url\(\'\.\/images\/secback\.png\'\)\] {
   background-image: url('./images/secback.png');
 }
@@ -846,14 +821,6 @@ video {
 
 .bg-bg1 {
   background-image: url('./images/header.png');
-}
-
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-
-.bg-\[url\(\'\.\/images\/menuimg7\.jpg\'\)\] {
-  background-image: url('./images/menuimg7.jpg');
 }
 
 .bg-cover {
@@ -874,10 +841,6 @@ video {
 
 .p-\[22px\] {
   padding: 22px;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-2 {
@@ -915,6 +878,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -940,16 +908,6 @@ video {
   padding-bottom: 22px;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -968,6 +926,14 @@ video {
 
 .pt-\[0\.6px\] {
   padding-top: 0.6px;
+}
+
+.pt-\[15px\] {
+  padding-top: 15px;
+}
+
+.pt-\[8px\] {
+  padding-top: 8px;
 }
 
 .text-center {
@@ -994,6 +960,10 @@ video {
   font-size: 15px;
 }
 
+.text-\[17px\] {
+  font-size: 17px;
+}
+
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -1008,10 +978,6 @@ video {
 
 .text-\[8px\] {
   font-size: 8px;
-}
-
-.text-\[17px\] {
-  font-size: 17px;
 }
 
 .font-bold {
@@ -1103,13 +1069,47 @@ a{
   fill:#ffecbd;
 }
 
-.menu a{
+@media screen and ( max-width:1024px) {
+  .menu{
+    display: none;
+    flex-direction: column;
+    background: #59611d;
+    height: 100%;
+    overflow-y: scroll;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    /* top: -100%; */
+    width: 100%;
+    /* padding-top: 15px; */
+    padding-bottom: 25px;
+    z-index: 10;
+  }
+
+  .menu .dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ffecbd;
+    border-radius: 15px;
+    text-transform: uppercase;
+  }
+}
+
+.menu .dropdown{
   padding: 5px 10px;
 }
 
-.menu a:hover{
+.menu .dropdown:hover{
   border: 1px solid black;
   border-radius: 40px;
+}
+
+@media screen and (min-width:1024px) {
+  .menu .dropdown i{
+    display: none;
+  }
 }
 
 .card:hover div div, .card2:hover div div {
@@ -1318,14 +1318,6 @@ a{
 
   .lg\:h-\[80vh\] {
     height: 80vh;
-  }
-
-  .lg\:h-\[90\%\] {
-    height: 90%;
-  }
-
-  .lg\:h-\[\] {
-    height: ;
   }
 
   .lg\:h-\[82\%\] {

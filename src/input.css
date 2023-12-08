@@ -23,13 +23,52 @@ a{
   fill:#ffecbd;
 }
 
-.menu a{
+@media screen and ( max-width:1024px) {
+   .menu{
+    display: none;
+    flex-direction: column;
+    background: #59611d;
+    height: 100%;
+    overflow-y: scroll;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    /* top: -100%; */
+    width: 100%;
+    /* padding-top: 15px; */
+    padding-bottom: 25px;
+    z-index: 10;
+    
+   }
+
+   
+
+   .menu .dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ffecbd;
+    border-radius: 15px;
+    text-transform: uppercase;
+   }
+}
+
+
+
+.menu .dropdown{
   padding: 5px 10px;
 }
 
-.menu a:hover{
+.menu .dropdown:hover{
   border: 1px solid black;
   border-radius: 40px;
+}
+
+@media screen and (min-width:1024px) {
+  .menu .dropdown i{
+    display: none;
+  }
 }
 
 
