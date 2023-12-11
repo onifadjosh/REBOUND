@@ -3,6 +3,7 @@
     // const selectedArray = Array.from(document.querySelectorAll(idsToSelect.map(id => `#${id}`)))
     const triggerElement = document.getElementById('trigger-element');
     const hiddenElement = document.getElementById('hidden-element');
+    const clicke = document.getElementById('clicke');
     
 
     const triggerElement1 = document.getElementById('trigger-element1');
@@ -20,6 +21,18 @@
     // Add event listener for hover
     triggerElement.addEventListener('mouseover', () => {
         hiddenElement.style.display = 'block';
+    });
+
+    // triggerElement.addEventListener('click', ()=>{
+    //     clicke.style.display = 'block'
+    // });
+
+    triggerElement.addEventListener('click', ()=>{
+        if(clicke.style.display === 'block'){
+            clicke.style.display = 'none';
+        } else {
+            clicke.style.display = 'block';
+        }
     });
 
     triggerElement.addEventListener('mouseout', () => {
