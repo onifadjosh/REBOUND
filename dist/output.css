@@ -755,26 +755,12 @@ video {
   border-radius: 50px;
 }
 
-.rounded-b-md {
-  border-bottom-right-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
-}
-
-.rounded-b-xl {
-  border-bottom-right-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
-}
-
 .rounded-b-3xl {
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
 
 .border-\[1px\] {
-  border-width: 1px;
-}
-
-.border {
   border-width: 1px;
 }
 
@@ -798,10 +784,6 @@ video {
 
 .border-t-\[1px\] {
   border-top-width: 1px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
 }
 
 .border-\[\#EBA900\] {
@@ -893,6 +875,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .px-\[28px\] {
   padding-left: 28px;
   padding-right: 28px;
@@ -916,6 +903,11 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-6 {
@@ -946,11 +938,6 @@ video {
 .py-\[22px\] {
   padding-top: 22px;
   padding-bottom: 22px;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pb-5 {
@@ -1140,15 +1127,32 @@ a{
     border-radius: 15px;
     text-transform: uppercase;
   }
+
+  .dropdown:active{
+    background: #ee7623;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .dropdown:active ~ .dropdown,
+  .dropdown:focus ~ .dropdown{
+    background-color: #ffecbd;
+  }
+
+  .dropdown:active .caret{
+    transform: rotate(90);
+  }
 }
 
 .menu .dropdown{
   padding: 5px 10px;
 }
 
-.menu .dropdown:hover{
-  border: 1px solid black;
-  border-radius: 40px;
+@media screen and (min-width: 1440px) {
+  .menu .dropdown:hover{
+    border: 1px solid black;
+    border-radius: 40px;
+  }
 }
 
 .card:hover div div, .card2:hover div div {
@@ -1441,6 +1445,10 @@ a{
 }
 
 @media (min-width: 1280px) {
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .xl\:flex {
     display: flex;
   }
@@ -1489,6 +1497,10 @@ a{
 
   .xl\:pt-0 {
     padding-top: 0px;
+  }
+
+  .xl\:text-\[17px\] {
+    font-size: 17px;
   }
 
   .xl\:text-\[20px\] {

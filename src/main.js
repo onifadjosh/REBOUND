@@ -2,6 +2,7 @@
     const triggerElement = document.getElementById('trigger-element');
     const hiddenElement = document.getElementById('hidden-element');
     const clicke = document.getElementById('clicke');
+    const open = document.getElementById('open');
     
 
     const triggerElement1 = document.getElementById('trigger-element1');
@@ -29,11 +30,18 @@
     // click event listener for menu in small screens (new)
     triggerElement.addEventListener('click', ()=>{
         if(clicke.style.display === 'block'){
-            clicke.style.display = 'none';
+            clicke.style.display = 'none',
+            triggerElement.style.backgroundColor = '#ffecbd';
+            triggerElement.style.borderBottomLeftRadius = '15px',
+            triggerElement.style.borderBottomRightRadius = '15px';
         } else {
             clicke.style.display = 'block';
+            triggerElement.style.backgroundColor = '#ee7623';
+            triggerElement.style.borderBottomLeftRadius = '0px',
+            triggerElement.style.borderBottomRightRadius = '0px';
         }
     });
+
 
     triggerElement.addEventListener('mouseout', () => {
         hiddenElement.style.display = 'none';
@@ -72,9 +80,15 @@
      // click event listener for menu in small screens (red)
      triggerElement1.addEventListener('click', ()=>{
         if(clicke1.style.display === 'block'){
-            clicke1.style.display = 'none';
+            clicke1.style.display = 'none',
+            triggerElement1.style.backgroundColor = '#ffecbd',
+            triggerElement1.style.borderBottomLeftRadius = '15px',
+            triggerElement1.style.borderBottomRightRadius = '15px';
         } else {
             clicke1.style.display = 'block';
+            triggerElement1.style.backgroundColor = '#ee7623',
+            triggerElement1.style.borderBottomLeftRadius = '0px',
+            triggerElement1.style.borderBottomRightRadius = '0px';
         }
     });
 
@@ -104,8 +118,14 @@
     triggerElement2.addEventListener('click', ()=>{
         if(clicke2.style.display === 'block'){
             clicke2.style.display = 'none';
+            triggerElement2.style.backgroundColor = '#ffecbd',
+            triggerElement2.style.borderBottomLeftRadius = '15px',
+            triggerElement2.style.borderBottomRightRadius = '15px';
         } else {
             clicke2.style.display = 'block';
+            triggerElement2.style.backgroundColor = '#ee7623',
+            triggerElement2.style.borderBottomLeftRadius = '0px',
+            triggerElement2.style.borderBottomRightRadius = '0px';
         }
     });
 
@@ -134,9 +154,15 @@
 
     triggerElement3.addEventListener('click', ()=>{
         if(clicke3.style.display === 'block'){
-            clicke3.style.display = 'none';
+            clicke3.style.display = 'none',
+            triggerElement3.style.backgroundColor = '#ffecbd',
+            triggerElement3.style.borderBottomLeftRadius = '15px',
+            triggerElement3.style.borderBottomRightRadius = '15px';
         } else {
-            clicke3.style.display = 'block';
+            clicke3.style.display = 'block',
+            triggerElement3.style.backgroundColor = '#ee7623',
+            triggerElement3.style.borderBottomLeftRadius = '0px',
+            triggerElement3.style.borderBottomRightRadius = '0px';
         }
     });
 
@@ -160,8 +186,14 @@
 
     triggerElement4.addEventListener('click', ()=>{
         if(clicke4.style.display === 'block'){
-            clicke4.style.display = 'none';
+            clicke4.style.display = 'none',
+            triggerElement4.style.backgroundColor = '#ffecbd',
+            triggerElement4.style.borderBottomLeftRadius = '15px',
+            triggerElement4.style.borderBottomRightRadius = '15px';
         } else {
             clicke4.style.display = 'block';
+            triggerElement4.style.backgroundColor = '#ee7623',
+            triggerElement4.style.borderBottomLeftRadius = '0px',
+            triggerElement4.style.borderBottomRightRadius = '0px';
         }
     });
