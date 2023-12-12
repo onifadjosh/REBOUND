@@ -1127,21 +1127,6 @@ a{
     border-radius: 15px;
     text-transform: uppercase;
   }
-
-  .dropdown:active{
-    background: #ee7623;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  .dropdown:active ~ .dropdown,
-  .dropdown:focus ~ .dropdown{
-    background-color: #ffecbd;
-  }
-
-  .dropdown:active .caret{
-    transform: rotate(90);
-  }
 }
 
 .menu .dropdown{

@@ -2,24 +2,28 @@
     const triggerElement = document.getElementById('trigger-element');
     const hiddenElement = document.getElementById('hidden-element');
     const clicke = document.getElementById('clicke');
-    const open = document.getElementById('open');
+    const caret = document.getElementById('caret');
     
 
     const triggerElement1 = document.getElementById('trigger-element1');
     const hiddenElement1 = document.getElementById('hidden-element1');
     const clicke1 = document.getElementById('clicke1');
+    const caret1 = document.getElementById('caret1');
 
     const triggerElement2 = document.getElementById('trigger-element2');
     const hiddenElement2 = document.getElementById('hidden-element2');
     const clicke2 = document.getElementById('clicke2');
+    const caret2 = document.getElementById('caret2');
 
     const triggerElement3 = document.getElementById('trigger-element3');
     const hiddenElement3 = document.getElementById('hidden-element3');
     const clicke3 = document.getElementById('clicke3');
+    const caret3 = document.getElementById('caret3');
     
     const triggerElement4 = document.getElementById('info-trig');
     const hiddenElement4 = document.getElementById('info-hidden');
     const clicke4 = document.getElementById('clicke4');
+    const caret4 = document.getElementById('caret4');
 
     // Add event listener for hover especially for the large screen menu
     triggerElement.addEventListener('mouseover', () => {
@@ -34,11 +38,13 @@
             triggerElement.style.backgroundColor = '#ffecbd';
             triggerElement.style.borderBottomLeftRadius = '15px',
             triggerElement.style.borderBottomRightRadius = '15px';
+            caret.style.transform = 'rotate(0deg)';
         } else {
             clicke.style.display = 'block';
             triggerElement.style.backgroundColor = '#ee7623';
             triggerElement.style.borderBottomLeftRadius = '0px',
             triggerElement.style.borderBottomRightRadius = '0px';
+            caret.style.transform = 'rotate(180deg)';
         }
     });
 
@@ -83,12 +89,14 @@
             clicke1.style.display = 'none',
             triggerElement1.style.backgroundColor = '#ffecbd',
             triggerElement1.style.borderBottomLeftRadius = '15px',
-            triggerElement1.style.borderBottomRightRadius = '15px';
+            triggerElement1.style.borderBottomRightRadius = '15px',
+            caret1.style.transform = 'rotate(0deg)';
         } else {
             clicke1.style.display = 'block';
             triggerElement1.style.backgroundColor = '#ee7623',
             triggerElement1.style.borderBottomLeftRadius = '0px',
-            triggerElement1.style.borderBottomRightRadius = '0px';
+            triggerElement1.style.borderBottomRightRadius = '0px',
+            caret1.style.transform = 'rotate(180deg)';
         }
     });
 
@@ -120,12 +128,14 @@
             clicke2.style.display = 'none';
             triggerElement2.style.backgroundColor = '#ffecbd',
             triggerElement2.style.borderBottomLeftRadius = '15px',
-            triggerElement2.style.borderBottomRightRadius = '15px';
+            triggerElement2.style.borderBottomRightRadius = '15px',
+            caret2.style.transform = 'rotate(0deg)';
         } else {
             clicke2.style.display = 'block';
             triggerElement2.style.backgroundColor = '#ee7623',
             triggerElement2.style.borderBottomLeftRadius = '0px',
-            triggerElement2.style.borderBottomRightRadius = '0px';
+            triggerElement2.style.borderBottomRightRadius = '0px',
+            caret2.style.transform = 'rotate(180deg)';
         }
     });
 
@@ -157,12 +167,14 @@
             clicke3.style.display = 'none',
             triggerElement3.style.backgroundColor = '#ffecbd',
             triggerElement3.style.borderBottomLeftRadius = '15px',
-            triggerElement3.style.borderBottomRightRadius = '15px';
+            triggerElement3.style.borderBottomRightRadius = '15px',
+            caret3.style.transform = 'rotate(0deg)';
         } else {
             clicke3.style.display = 'block',
             triggerElement3.style.backgroundColor = '#ee7623',
             triggerElement3.style.borderBottomLeftRadius = '0px',
-            triggerElement3.style.borderBottomRightRadius = '0px';
+            triggerElement3.style.borderBottomRightRadius = '0px',
+            caret3.style.transform = 'rotate(180deg)';
         }
     });
 
@@ -189,11 +201,13 @@
             clicke4.style.display = 'none',
             triggerElement4.style.backgroundColor = '#ffecbd',
             triggerElement4.style.borderBottomLeftRadius = '15px',
-            triggerElement4.style.borderBottomRightRadius = '15px';
+            triggerElement4.style.borderBottomRightRadius = '15px',
+            caret4.style.transform = 'rotate(0deg)';
         } else {
             clicke4.style.display = 'block';
             triggerElement4.style.backgroundColor = '#ee7623',
             triggerElement4.style.borderBottomLeftRadius = '0px',
-            triggerElement4.style.borderBottomRightRadius = '0px';
+            triggerElement4.style.borderBottomRightRadius = '0px',
+            caret4.style.transform = 'rotate(180deg)';
         }
     });
