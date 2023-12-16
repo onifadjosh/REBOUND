@@ -34,7 +34,7 @@ a{
     align-items: flex-start;
     position: fixed;
     /* top: -100%; */
-    width: 100%;
+    /* width: 100%; */
     /* padding-top: 15px; */
     padding-bottom: 25px;
     z-index: 10;
@@ -47,7 +47,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     background-color: #ffecbd;
     border-radius: 15px;
     text-transform: uppercase;

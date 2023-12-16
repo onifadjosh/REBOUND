@@ -10,17 +10,3 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     menuItems.style.display= 'none'
 } );
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    window.addEventListener('scroll', function () {
-      var menuHead = document.getElementById('menuHead');
-  
-      if (window.scrollY > menuHead.offsetTop) {
-        menuHead.classList.add('fixed');
-      } else {
-        menuHead.classList.remove('fixed');
-      }
-    });
-  });
-  
