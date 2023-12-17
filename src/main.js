@@ -26,11 +26,35 @@
     const caret4 = document.getElementById('caret4');
 
     // Add event listener for hover especially for the large screen menu
-    triggerElement.addEventListener('mouseover', () => {
+    function handleMouseOver0() {
+        hiddenElement.style.display = 'block';
+        }
+    
+        // Function to handle mouseout event
+        function handleMouseOut0() {
+        hiddenElement.style.display = 'none';
+        }
+    
+        // Media query for the specified minimum screen size
+        const mediaQuery0 = window.matchMedia('(min-width: 1440px)');
+    
+        // Check if the initial screen size meets the condition
+        if (mediaQuery0.matches) {
+    
+        // Add event listeners only if the screen size is large
+        triggerElement.addEventListener('mouseover', handleMouseOver0);
+        triggerElement.addEventListener('mouseout', handleMouseOut0);
+        }
+
+    // Add event listener for hover on the hidden element to stay on block and and hidden when not on hover
+    hiddenElement.addEventListener('mouseover', () => {
         hiddenElement.style.display = 'block';
     });
 
-    
+    hiddenElement.addEventListener('mouseout', () => {
+        hiddenElement.style.display = 'none';
+    });
+
     // click event listener for menu in small screens (new)
     triggerElement.addEventListener('click', ()=>{
         if(clicke.style.display === 'block'){
@@ -45,34 +69,34 @@
             triggerElement.style.borderBottomLeftRadius = '0px',
             triggerElement.style.borderBottomRightRadius = '0px';
             caret.style.transform = 'rotate(180deg)';
+            
         }
-    });
-
-
-    triggerElement.addEventListener('mouseout', () => {
-        hiddenElement.style.display = 'none';
-    });
-
-    // Add event listener for hover on the hidden element to stay on block and and hidden when not on hover
-    hiddenElement.addEventListener('mouseover', () => {
-        hiddenElement.style.display = 'block';
-    });
-
-    hiddenElement.addEventListener('mouseout', () => {
-        hiddenElement.style.display = 'none';
     });
 
     
     // break for the second hover
 
-    // Add event listener for hover especially for the large screen menu ##2
-    triggerElement1.addEventListener('mouseover', () => {
+    // Add event listener for hover especially for the large screen menu
+    function handleMouseOver1() {
         hiddenElement1.style.display = 'block';
-    });
-
-    triggerElement1.addEventListener('mouseout', () => {
+        }
+    
+        // Function to handle mouseout event
+        function handleMouseOut1() {
         hiddenElement1.style.display = 'none';
-    });
+        }
+    
+        // Media query for the specified minimum screen size
+        const mediaQuery1 = window.matchMedia('(min-width: 1024px)');
+    
+        // Check if the initial screen size meets the condition
+        if (mediaQuery1.matches) {
+    
+        // Add event listeners only if the screen size is large
+        triggerElement1.addEventListener('mouseover', handleMouseOver1);
+        triggerElement1.addEventListener('mouseout', handleMouseOut1);
+        }
+
 
     // Add event listener for hover on the hidden element
     hiddenElement1.addEventListener('mouseover', () => {
@@ -102,13 +126,25 @@
 
     //break for third hover
     // Add event listener for hover
-    triggerElement2.addEventListener('mouseover', () => {
+    function handleMouseOver2() {
         hiddenElement2.style.display = 'block';
-    });
-
-    triggerElement2.addEventListener('mouseout', () => {
+        }
+    
+        // Function to handle mouseout event
+        function handleMouseOut2() {
         hiddenElement2.style.display = 'none';
-    });
+        }
+    
+        // Media query for the specified minimum screen size
+        const mediaQuery2 = window.matchMedia('(min-width: 1024px)');
+    
+        // Check if the initial screen size meets the condition
+        if (mediaQuery2.matches) {
+    
+        // Add event listeners only if the screen size is large
+        triggerElement2.addEventListener('mouseover', handleMouseOver2);
+        triggerElement2.addEventListener('mouseout', handleMouseOut2);
+        }
 
     // Add event listener for hover on the hidden element
     hiddenElement2.addEventListener('mouseover', () => {
@@ -142,13 +178,29 @@
 
     //break for fourth hover
     // Add event listener for hover
-    triggerElement3.addEventListener('mouseover', () => {
-        hiddenElement3.style.display = 'block';
-    });
+    // Function to handle mouseover event
+    function handleMouseOver() {
+    hiddenElement3.style.display = 'block';
+    }
 
-    triggerElement3.addEventListener('mouseout', () => {
-        hiddenElement3.style.display = 'none';
-    });
+    // Function to handle mouseout event
+    function handleMouseOut() {
+    hiddenElement3.style.display = 'none';
+    }
+
+    // Media query for the specified maximum screen size
+    const mediaQuery3 = window.matchMedia('(min-width: 1440px)');
+
+    // Check if the initial screen size meets the condition
+    if (mediaQuery3.matches) {
+    // Get your trigger and hidden elements
+    // const triggerElement3 = document.getElementById('yourTriggerElementId'); // Replace with actual ID or selector
+    // const hiddenElement3 = document.getElementById('yourHiddenElementId'); // Replace with actual ID or selector
+
+    // Add event listeners only if the screen size is large
+    triggerElement3.addEventListener('mouseover', handleMouseOver);
+    triggerElement3.addEventListener('mouseout', handleMouseOut);
+    }
 
     // Add event listener for hover on the hidden element
     hiddenElement3.addEventListener('mouseover', () => {
@@ -179,14 +231,25 @@
     });
 
     //break for the fifth hover menu
-    triggerElement4.addEventListener('mouseover', () => {
+    function handleMouseOver4() {
         hiddenElement4.style.display = 'block';
-    });
-
-
-    triggerElement4.addEventListener('mouseout', () =>{
+        }
+    
+        // Function to handle mouseout event
+        function handleMouseOut4() {
         hiddenElement4.style.display = 'none';
-    });
+        }
+    
+        // Media query for the specified minimum screen size
+        const mediaQuery4 = window.matchMedia('(min-width: 1440px)');
+    
+        // Check if the initial screen size meets the condition
+        if (mediaQuery4.matches) {
+    
+        // Add event listeners only if the screen size is large
+        triggerElement4.addEventListener('mouseover', handleMouseOver4);
+        triggerElement4.addEventListener('mouseout', handleMouseOut4);
+        }
 
     hiddenElement4.addEventListener('mouseover', () =>{
         hiddenElement4.style.display = 'block';
@@ -204,7 +267,7 @@
             triggerElement4.style.borderBottomRightRadius = '15px',
             caret4.style.transform = 'rotate(0deg)';
         } else {
-            clicke4.style.display = 'block';
+            clicke4.style.display = 'block',
             triggerElement4.style.backgroundColor = '#ee7623',
             triggerElement4.style.borderBottomLeftRadius = '0px',
             triggerElement4.style.borderBottomRightRadius = '0px',

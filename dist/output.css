@@ -1135,7 +1135,7 @@ a{
     height: 100%;
     overflow-y: scroll;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     position: fixed;
     /* top: -100%; */
     /* width: 100%; */
@@ -1155,6 +1155,10 @@ a{
   }
 }
 
+#caret, #caret1, #caret2, #caret3, #caret4{
+  transition: ease-in-out 1.5s;
+}
+
 .menu .dropdown{
   padding: 5px 10px;
 }
@@ -1163,6 +1167,10 @@ a{
   .menu .dropdown:hover{
     border: 1px solid black;
     border-radius: 40px;
+  }
+
+  #caret, #caret1, #caret2, #caret3, #caret4{
+    display: none;
   }
 }
 
